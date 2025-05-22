@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Profile</title>
+  <!-- Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #6a11cb, Violet);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .profile-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .profile-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin: 10px 0 20px;
+    }
+
+    .contact-section {
+      margin: 20px 0;
+      text-align: left;
+    }
+
+    .contact-section h3 {
+      margin-bottom: 8px;
+      color: #ffd700;
+    }
+
+    .contact-section a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+      text-decoration: none;
+      margin: 5px 0;
+      font-size: 1em;
+    }
+
+    .contact-section a i {
+      width: 20px;
+    }
+
+    .contact-section a:hover {
+      text-decoration: underline;
+    }
+    .responsive-form {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* Adjust height ratio here */
+  margin-top: 20px;
+}
+
+.responsive-form iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+
+    @media (max-width: 500px) {
+      .profile-card {
+        padding: 20px;
+      }
+
+      .profile-card img {
+        width: 100px;
+        height: 100px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+    <img src="me.jpg" alt="Profile Photo" />
+    <h1>Min Htet Oo (Onizuka)</h1>
+    <p>20 years old INTP type student learning in West Yangon University (majority of Physics) | Studying Python programming</p>
+
+    <div class="contact-section">
+      <h3>Bio</h3>
+      <p>I like transparency. If you are interested in Computer Programming, let's learn with me. Brother! If you play PUBG , let play together but <b>I am not an expert.</b></p>
+    </div>
+    <div class="contact-section">
+      <h3>PUBG id</h3>
+      <p><b>52212027837</b> named Apx-Aldom </p>
+    </div>
+    <div class="contact-section">
+      <h3>Personal Contact</h3>
+      <a href="mailto:oominhtet85@gmail.com"><i class="fas fa-envelope"></i>oominhtet85@gmail.com</a>
+      <a href="https://t.me/onizuka_f" target="_blank"><i class="fab fa-telegram"></i>Telegram</a>
+      <a href="https://www.linkedin.com/in/min-htet-926300367?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+           <a href="https://github.com/Htoocha" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+      
+    </div>
+    <div class="contact-section">
+      <!-- Add this inside your profile-card or at the bottom of your page -->
+<h3>Send an Anonymous Message</h3>
+<div class="responsive-form">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScSjWMum68mW52keP9rGN7qopeH-F7-cLH8lwrDnjXgPeXtTQ/viewform?embedded=true" width="640" height="374" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+
+    </div>
+  </div>
+
+</body>
+</html>
